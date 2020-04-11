@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #d7d7d8;
+    font-family: 'Roboto', sans-serif;
+}
+#header{
+    background-color: #14182d;
+}
+header{
+    width: 1170px;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+header a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+header a:hover{
+    border-bottom: 2px solid #d7d7d8;
+    padding-bottom: 10px;
+}
+#logo{
+    float: left;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+nav{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin: 0px 25px;
+}
+div.clear{
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
