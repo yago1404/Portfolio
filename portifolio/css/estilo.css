@@ -1,16 +1,24 @@
 *{
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     color: #d7d7d8;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
-#header{
-    background-color: #14182d;
+a{
+    text-decoration: none;
+}
+button{
+    color: none;
+    border: 3px solid #A40610;
+    font-size: 20px;
+    border-radius: 70px;
+    margin: 0px 16px;
 }
 header{
     width: 1170px;
     margin: 0px auto;
-    padding: 20px 0px;
+    padding-bottom: 0px;
 }
 header a{
     text-decoration: none;
@@ -20,25 +28,193 @@ header a:hover{
     border-bottom: 2px solid #d7d7d8;
     padding-bottom: 10px;
 }
-#logo{
-    float: left;
-    background-color: white;
-    width: 20px;
-    height: 20px;
-}
 nav{
     float: right;
+    padding: 30px 0px;
 }
 nav li{
     display: inline-block;
     margin: 0px 25px;
+
 }
 div.clear{
     clear: both;
 }
+
+
+#portfolio-perfil-button, #contact-perfil-button{
+    height: 57px;
+    width: 184px;
+    padding: 16px auto;
+}
+#header{
+    background-color: #14182d;
+    height: 80px;
+}
+#logo{
+    float: left;
+}
+#image-logo{
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+}
+#presentation{
+    background-color: #1B203B;
+    padding-top: 60px;
+    height: 690px;
+}
+#principal-social-medias {
+    width: 640px;
+    margin: 0px auto;
+}
+#principal-social-medias li{
+    height: 50px;
+    width: 50px;
+    margin: 0px 17px;
+    display: inline-block;
+    border: 3px solid #A40610;
+    border-radius: 50%;
+    padding: 12px auto;
+}
+#perfil-circular{
+    background-color: #C8C8C8;
+    width: 268px;
+    height: 268px;
+    margin: 34px auto;
+    border-radius: 50%;
+}
+#page-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#sub-title{
+    font-size: 16px;
+    color: #A8A8AA;
+    width: 507px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+#button-line{
+    margin-top: 38px;
+}
+#services{
+    background-color: #14182D;
+    padding: 102px 0px;
+}
+#services-cards{
+    width: 1170px;
+    margin: 83px auto;
+}
+#principal-social-medias img{
+    width: 25px;
+    height: 25px;
+    margin: 12px auto;
+}
+#about{
+    background-color: #1B203B;
+    margin: 0px;
+    padding-bottom: 120px;
+}
+#into-about{
+    padding: 102px 0px;
+}
+#about-content{
+    width: 1170px;
+}
+#about-me-image{
+    width: 471px;
+    height: 530px;
+}
+#about-content-right{
+    width: 669px;
+    height: 530px;
+}
+#about-content-right p{
+    text-align: left;
+    line-height: 25px;
+    color: #A8A8AA;
+}
+#about-content-right h2{
+    text-align: left;
+    margin: 52px 0px 52px 0px;
+}
+#about-content-right ul{
+    list-style: none;
+    margin-top: 40px;
+}
+#about-content-right li{
+    display: inline-block;
+    width: 330px;
+    margin-bottom: 30px;
+
+}
+li h3{
+    text-align: left;
+}
+li p{
+    text-align: left;
+}
+
+
+
+
 .left{
     float: left;
 }
 .right{
     float: right;
+}
+.transparent-button{
+    background-color: rgba(000, 000, 000, 0%);
+}
+.red-button{
+    background-color: #A40610;
+}
+.red-text-title{
+    color: #A40610;
+    font-size: 16px;
+}
+.wight-text-title{
+    font-size: 30px;
+    margin: 8px auto;
+    line-height: 42px;
+}
+.grey-text-resume{
+    color: #A8A8AA;
+    margin: 0px auto;
+    margin-bottom: 33px;
+    width: 649.72px;
+    line-height: 25px;
+}
+.line-red{
+    border: 1px solid red;
+    width: 57px;
+    margin: 0px auto;
+}
+.service-card{
+    display: inline-block;
+    background-color: #1B203B;
+    width: 363px;
+    height: 388px;
+    margin: 14px 10px;
+    text-align: left;
+}
+.service-card-image{
+    width: 57px;
+    height: 57px;
+    margin: 23px 0px 0px 23px;
+}
+.service-card-title{
+    font-size: 25px;
+    text-align: left;
+    width: 315px;
+    margin-top: 25px;
+}
+.service-card-text{
+    text-align: left;
+    color: #A8A8AA;
+    width: 315px;
+    margin: 50px auto;
+    line-height: 30px;
 }
