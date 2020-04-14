@@ -155,7 +155,63 @@ li h3{
 li p{
     text-align: left;
 }
-
+#portfolio{
+    background-color: #14182d;
+    padding: 102px 0px;
+}
+#portfolio li{
+    display: inline-block;
+    margin: 75px 60px;
+}
+#portfolio-content{
+    width: 1170px;
+    margin: 0px auto;
+}
+#web-design-button{
+    border: 3px solid #A40610;
+    border-radius: 70px;
+    padding: 10px 30px;
+}
+#portfolio .left img{
+    width: 770px;
+    height: 577.37px;
+}
+#portfolio .right img{
+    width: 370px;
+    height: 277.5px;
+    display: block;
+    margin-bottom: 20px;
+}
+#portfolio-content button{
+    margin-top: 107px;
+    padding: 16px 60px;
+}
+#contact{
+    background-color: #1B203B;
+    padding: 102px 0px;
+}
+#contact-content{
+    width: 1170px;
+}
+#contact .left{
+    width: 814px;
+}
+#contact .left p, #contact .left h2{
+    text-align: left;
+}
+#contact .left p{
+    color: #A8A8AA;
+    line-height: 25px;
+    letter-spacing: 1.3px;
+}
+#contact .left h2{
+    margin-bottom: 18px;
+}
+#contact .right button{
+    font-size: 30px;
+    padding: 18px 82px;
+    margin-top: 25px;
+}
 
 
 
