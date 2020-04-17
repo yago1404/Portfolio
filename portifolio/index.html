@@ -6,6 +6,7 @@
     <title>Yago Taveiros Dev</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="javascript/effect.js"></script>
 </head>
 
 <body>
@@ -17,11 +18,11 @@
             <span id="nav">
                 <nav id="menu">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Meus Serviços</a></li>
-                        <li><a href="">Sobre Mim</a></li>
-                        <li><a href="">Portfólio</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><button onclick="scroll_page(00)">Home</button></li>
+                        <li><button onclick="scroll_page(800)">Meus Serviços</button></li>
+                        <li><button onclick="scroll_page(2150)">Sobre Mim</button></li>
+                        <li><button onclick="scroll_page(3200)">Portfólio</button></li>
+                        <li><button onclick="scroll_page(4300)">Contato</button></li>
                     </ul>
                 </nav>
             </span>
@@ -170,6 +171,7 @@
                     <div class="clear"></div>
                 </div>
             </div>
+
             <div id="portfolio">
                 <div id="into-portfolio">
                     <h3 class="red-text-title">PORTFOLIO</h3>
@@ -180,37 +182,83 @@
                     <hr class="line-red" />
                 </div>
                 <ul>
-                    <a href="#">
-                        <li id="web-design-button">Web Desgin</li>
-                    </a>
-                    <a href="#">
-                        <li>Web Developer</li>
-                    </a>
-                    <a href="#">
-                        <li>Mobile Developer</li>
-                    </a>
-                    <a href="#">
-                        <li>Twig</li>
-                    </a>
+                    <li>
+                        <button class="portfolio-button" id="design-button"
+                            onclick="transition_content('design-button', 'design-div')">Web Desgin</button>
+                    </li>
+                    <li>
+                        <button class="portfolio-button" id="web-developer-button"
+                            onclick="transition_content('web-developer-button', 'web-developer-div')">Web Developer</button>
+                    </li>
+                    <li>
+                        <button class="portfolio-button" id="mobile-developer-button"
+                            onclick="transition_content('mobile-developer-button', 'mobile-developer-div')">Mobile Developer</button>
+                    </li>
+                    <li>
+                        <button class="portfolio-button" id="twig-button"
+                            onclick="transition_content('twig-button', 'twig-div')">Twig</button>
+                    </li>
                 </ul>
                 <div id="portfolio-content">
-                    <div class="left">
-                        <img src="images/UI1.png" alt="">
+                    <div id="design-div" class="floating">
+                        <div class="left">
+                            <img src="images/UI1.png">
+                        </div>
+                        <div class="right">
+                            <img src="images/UI2.jpg">
+                            <img src="images/UI3.png">
+                        </div>
+                        <div class="clear"></div>
+                        <button class="red-button">Ver Mais Desgins</button>
                     </div>
-                    <div class="right">
-                        <img src="images/UI2.jpg" alt="">
-                        <img src="images/UI3.png" alt="">
+
+                    <div id="web-developer-div" class="floating">
+                        <div class="left">
+                            <img src="images/UI3.png">
+                        </div>
+                        <div class="right">
+                            <img src="images/UI2.jpg">
+                            <img src="images/UI1.png">
+                        </div>
+                        <div class="clear"></div>
+                        <button class="red-button">Ver Mais Projetos Web</button>
                     </div>
-                    <div class="clear"></div>
-                    <button class="red-button">Mais Porjetos</button>
+
+                    <div id="mobile-developer-div" class="floating">
+                        <div class="left">
+                            <img src="images/UI2.jpg">
+                        </div>
+                        <div class="right">
+                            <img src="images/UI1.png">
+                            <img src="images/UI1.png">
+                        </div>
+                        <div class="clear"></div>
+                        <button class="red-button">Ver Mais Projetos Mobiles</button>
+                    </div>
+
+                    <div id="twig-div" class="floating">
+                        <div class="left">
+                            <img src="images/UI1.png">
+                        </div>
+                        <div class="right">
+                            <img src="images/UI2.jpg">
+                            <img src="images/UI1.png">
+                        </div>
+                        <div class="clear"></div>
+                        <button class="red-button">Ver Mais Sobre Twig</button>
+                    </div>
+
+                    <div class="clear"></div>        
                 </div>
             </div>
+
             <div id="contact">
                 <div id="contact-content">
                     <div class="left">
                         <h2>Entre em contato agora mesmo!</h2>
                         <p>Entre em contato agora mesmo para fazer um orçamento e colocar seu projeto em prática, bacta
-                            clicar no botão ao lado e preencher um rápido formulário de contato, então assim que possivel,
+                            clicar no botão ao lado e preencher um rápido formulário de contato, então assim que
+                            possivel,
                             responderei sua solicitação</p>
                     </div>
                     <div class="right">
@@ -223,8 +271,49 @@
         </section>
     </div>
     <footer>
-        Todos os diretos reservados
+        <div id="footer-content">
+            <div class="left">
+                <p>Todos os direitos reservados</p>
+                <div id="munu-list">
+                    <nav id="footer-menu">
+                        <p>Menu:</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Meus Serviços</a></li>
+                            <li><a href="#">Sobre Mim</a></li>
+                            <li><a href="#">Portfólio</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="right">
+                <p>Mídias Sociais</p>
+                <ul>
+                    <a href="">
+                        <li><img src="images/001-facebook.png" alt=""></li>
+                    </a>
+                    <a href="">
+                        <li><img src="images/002-instagram.png" alt=""></li>
+                    </a>
+                    <a href="">
+                        <li><img src="images/003-whatsapp.png" alt=""></li>
+                    </a>
+                    <a href="">
+                        <li><img src="images/004-linkedin.png" alt=""></li>
+                    </a>
+                    <a href="">
+                        <li><img src="images/005-gmail-logo.png" alt=""></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <p id="final-title">YagoTaveirosDev&copy;</p>
+        </div>
     </footer>
+    <script>
+        load_page();
+    </script>
 </body>
 
 </html>
