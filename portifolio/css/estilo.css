@@ -41,7 +41,7 @@ header button:hover{
 }
 nav{
     float: right;
-    padding: 30px 0px;
+    padding: 20px 0px 30px 0px;
 }
 nav li{
     display: inline-block;
@@ -75,6 +75,12 @@ footer p{
 
 
 
+#contact-link{
+    background-color: #A40610;
+    border: 1px solid #A40610;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
 #portfolio-perfil-button, #contact-perfil-button{
     height: 57px;
     width: 184px;
@@ -109,7 +115,7 @@ footer p{
     border: 3px solid #A40610;
     border-radius: 50%;
     padding: 12px auto;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 #principal-social-medias li:hover{
     background-color: #A40610;
